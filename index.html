@@ -4,6 +4,20 @@
 		<title>Hank Quinlan, Horrible Cop</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css"/>
 		<script type="text/javascript">
+			function loadCSSIfNotAlreadyLoadedForSomeReason () {
+			alert("Load css if not called...");
+    			var ss = document.styleSheets;
+    			for (var i = 0, max = ss.length; i < max; i++) {
+				if (ss[i].href == "/path/to.css")
+			        	return;
+			}
+			var link = document.createElement("link");
+			link.rel = "stylesheet";
+			link.href = "/path/to.css";
+
+    			document.getElementsByTagName("head")[0].appendChild(link);
+			}
+			loadCSSIfNotAlreadyLoadedForSomeReason();
 			alert("Loaded the style...");
 		</script>
 	</head>
