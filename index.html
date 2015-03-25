@@ -2,29 +2,8 @@
 <html>
 	<head>
 		<title>Hank Quinlan, Horrible Cop</title>
-		<link rel="stylesheet" type="text/css" href="http://thequicklearner.github.io/css/main.css"/>
-		<script type="text/javascript">
-			function loadCSSIfNotAlreadyLoadedForSomeReason () {
-			alert("Load css if not loaded called...");
-    			var ss = document.styleSheets;
-    			alert("var ss :: "+ss.length);
-    			for (var i = 0, max = ss.length; i < max; i++) {
-				if (ss[i].href == "http://thequicklearner.github.io/css/main.css"){
-					alert("if ss[i].href = "+ss[i].href);	
-					return;
-				}else{
-					alert("else ss[i].href = "+ss[i].href);	
-				}
-			}
-			var link = document.createElement("link");
-			link.rel = "stylesheet";
-			link.href = "http://thequicklearner.github.io/css/main.css";
-
-    			document.getElementsByTagName("head")[0].appendChild(link);
-			}
-			loadCSSIfNotAlreadyLoadedForSomeReason();
-			alert("Loaded the style...");
-		</script>
+		<link rel="stylesheet" type="text/css" href="http://thequicklearner.github.io/hello-world/css/main.css"/>
+	
 	</head>
 	<body>
 		<nav>
