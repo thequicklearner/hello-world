@@ -8,8 +8,10 @@
 			alert("Load css if not loaded called...");
     			var ss = document.styleSheets;
     			for (var i = 0, max = ss.length; i < max; i++) {
-				if (ss[i].href == "/css/main.css")
-			        	return;
+				if (ss[i].href == "/css/main.css"){
+					alert("ss[i].href = "+ss[i].href);	
+					return;
+				}
 			}
 			var link = document.createElement("link");
 			link.rel = "stylesheet";
